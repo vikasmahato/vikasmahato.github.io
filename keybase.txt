@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/vikasmahato
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://vikasmahato.github.io
+  * I am vikasmahato (https://keybase.io/vikasmahato) on keybase.
+  * I have a public key ASAGeaib2tTT1tBALuYco6pOrl9soO2MvY8bJemqAii5cwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012073af50b29088df0c684d6d4bbae21b00b6b157675c10ddee8bc9aeffb1497f130a",
+      "host": "keybase.io",
+      "kid": "01200679a89bdad4d3d6d0402ee61ca3aa4eae5f6ca0ed8cbd8f1b25e9aa0228b9730a",
+      "uid": "d9eb7325c4be776feee4a3d46a446219",
+      "username": "vikasmahato"
+    },
+    "merkle_root": {
+      "ctime": 1524550389,
+      "hash": "d64f9fc22b219c721b9ac003faa8b457e9074b9ca52730e7538185ecca1968c3201e4f8fb06afa86e7cd5ab585042b11b6243432879c04f1de33f73946ad5862",
+      "hash_meta": "ddf615915505e03ca8dddc69d298b9449342d589dcce962c4dad92f38e35211b",
+      "seqno": 2433527
+    },
+    "service": {
+      "entropy": "WqH0MYl9UEjdxc9vJD1sn8S4",
+      "hostname": "vikasmahato.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.47"
+  },
+  "ctime": 1524550442,
+  "expire_in": 504576000,
+  "prev": "886f72d0ca647cd6c5c40668e0203456bde37181b28a4963fcbd9d3d1aac58f0",
+  "seqno": 15,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgBnmom9rU09bQQC7mHKOqTq5fbKDtjL2PGyXpqgIouXMKp3BheWxvYWTESpcCD8QgiG9y0MpkfNbFxAZo4CA0Vr3jcYGyiklj/L2dPRqsWPDEIECG4JXJ0l/rxaT1S42dFSla8TpQnYw+N2w/niH8e/Y2AgHCo3NpZ8RANiUUiqD0HFmXq0erwImAZZ3LxksgNIhHOcjSEeqckpiQuK8V1+CxJJjzqoVidJE05eJAr3izNoaa8+d4FHLLD6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJzZP/foc8e9eL6a/1vnRHIAy9CEHcIKndjQLkgYsNq7o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/vikasmahato
+
+==================================================================
