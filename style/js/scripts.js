@@ -451,24 +451,24 @@ $container.imagesLoaded( function() {
 /*-----------------------------------------------------------------------------------*/
 var instagramFeed = new Instafeed({
     get: 'user',
-    userId: 1215763826,
-        accessToken: '1215763826.f1627ea.512d3a9b334a4c91ac2e83d4f4d9b291',
+    userId: 1695495116,
+    accessToken: '1695495116.1677ed0.97dc8cfa1d864846bf9aaa06a6171c10',
     resolution: 'low_resolution',
     template: '<div class="item"><figure class="frame"><img src="{{image}}" /><a href="{{link}}" class="ins-link" target="_blank"><i class="icon-link"></i></a></figure></div>',
     after: function () {
         $('.swiper-container.instagram').each(function(){
 			  $(this).swiper({
-			     grabCursor: true,
+			    grabCursor: true,
 			    slidesPerView: 'auto',
 			    wrapperClass: 'swiper',
 			    slideClass: 'item',
 			    offsetPxBefore: 0,
-			     offsetPxAfter: 0
+			    offsetPxAfter: 0
 			  });
 			
 			  var $swipers = $(this);
 			
-			  $swipers.siblings('.arrow-left').click(function(){
+			$swipers.siblings('.arrow-left').click(function(){
 			$swipers.data('swiper').swipeTo($swipers.data('swiper').activeIndex-1);
 			return false;
 			});
