@@ -21,7 +21,19 @@ export default class Timeline extends Component {
                         <i className="icon-pen2" />
                       </div>
                       <div className="timeline-label">
-                        <h2>Nucleus Software Exports Ltd., Noida <span>Jul, 2018 – Present</span></h2>
+                        <h2>Expedia Group, Gurugram <span>Jan, 2021 – Present</span></h2>
+                        <p>Here I work on Big Data and Data Engineering in the Competitive Intelligence team. A bulk of the programming task is done in Scala, however some components use java, python, angular and react as well. We make heavy use of Kafka. </p>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article className="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                    <div className="timeline-entry-inner">
+                      <div className="timeline-icon color-3">
+                        <i className="icon-pen2" />
+                      </div>
+                      <div className="timeline-label">
+                        <h2>Nucleus Software Exports Ltd., Noida <span>Jul, 2018 – Jan, 2021</span></h2>
                         <p>Here I work on Spring-Hibernate. I have worked on improving performance issues in the application. I also hold experience in working with certain routines that are considered complex in their behaviour but for an essential part of the application.</p>
                       </div>
                     </div>
