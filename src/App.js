@@ -15,7 +15,7 @@ class App extends Component {
 				<div id="colorlib-main">
 					<Introduction></Introduction>
 					<About></About>
-          <Skills></Skills>
+                    <Skills></Skills>
 					<Timeline></Timeline>
           	</div>
       	</div>
