@@ -14,7 +14,7 @@ const Navigation = () => {
       <div className="container px-6">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="font-mono font-semibold text-foreground hover:text-primary transition-colors">
-            &lt;dev /&gt;
+            &lt;vikas /&gt;
           </a>
 
           {/* Desktop nav */}
@@ -29,7 +29,7 @@ const Navigation = () => {
               </a>
             ))}
             <a
-              href="mailto:hello@example.com"
+              href="mailto:hello@vikasmahato.com"
               className="px-4 py-2 text-sm font-medium bg-gradient-primary text-primary-foreground rounded-lg hover:shadow-glow transition-all"
             >
               Get in Touch
@@ -60,7 +60,7 @@ const Navigation = () => {
                 </a>
               ))}
               <a
-                href="mailto:hello@example.com"
+                href="mailto:hello@vikasmahato.com"
                 className="px-4 py-2 text-sm font-medium bg-gradient-primary text-primary-foreground rounded-lg text-center"
               >
                 Get in Touch

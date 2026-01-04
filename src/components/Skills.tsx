@@ -1,56 +1,97 @@
 import SkillBadge from "./SkillBadge";
+import { 
+  Code, Database, Cloud, Cpu, Layers, Workflow, 
+  Bot, Brain, Server, Globe, Smartphone, Zap,
+  FileCode, Settings, Terminal, GitBranch, Box, Network,
+  BarChart3, FileJson, Container, Cog
+} from "lucide-react";
+import { 
+  SiScala, SiApachespark, SiApachekafka, SiPython,
+  SiSpring, SiHibernate, SiFirebase, SiReact, SiNextdotjs,
+  SiRedux, SiTypescript, SiPostgresql, SiMysql,
+  SiMongodb, SiOpenai, SiLangchain, SiN8n,
+  SiCplusplus, SiGit, SiLinux, SiAndroid, SiDocker, SiOdoo
+} from "@icons-pack/react-simple-icons";
 
 const skillCategories = [
   {
     title: "Languages",
     skills: [
-      { name: "Scala", category: "language" as const },
-      { name: "Java", category: "language" as const },
-      { name: "C++", category: "language" as const },
-      { name: "SQL", category: "language" as const },
-      { name: "Python", category: "language" as const },
+      { name: "Scala", category: "language" as const, Icon: SiScala },
+      { name: "Java", category: "language" as const, Icon: Code },
+      { name: "Python", category: "language" as const, Icon: SiPython },
+      { name: "TypeScript", category: "language" as const, Icon: SiTypescript },
+      { name: "C++", category: "language" as const, Icon: SiCplusplus },
+      { name: "SQL", category: "language" as const, Icon: Database },
+    ],
+  },
+  {
+    title: "GenAI & ML",
+    skills: [
+      { name: "LLM Integration", category: "ai" as const, Icon: SiOpenai },
+      { name: "LangChain", category: "ai" as const, Icon: SiLangchain },
+      { name: "RAG Systems", category: "ai" as const, Icon: Brain },
+      { name: "AI Agents", category: "ai" as const, Icon: Bot },
+      { name: "n8n Workflows", category: "ai" as const, Icon: SiN8n },
+      { name: "Vector Databases", category: "ai" as const, Icon: Database },
+      { name: "Prompt Engineering", category: "ai" as const, Icon: Terminal },
     ],
   },
   {
     title: "Big Data & Streaming",
     skills: [
-      { name: "Apache Spark", category: "framework" as const },
-      { name: "Apache Kafka", category: "framework" as const },
-      { name: "Hadoop", category: "framework" as const },
-      { name: "Data Pipelines", category: "concept" as const },
-      { name: "ETL", category: "concept" as const },
-      { name: "Real-time Streaming", category: "concept" as const },
+      { name: "Apache Spark", category: "framework" as const, Icon: SiApachespark },
+      { name: "Apache Kafka", category: "framework" as const, Icon: SiApachekafka },
+      { name: "Hadoop", category: "framework" as const, Icon: Server },
+      { name: "Data Pipelines", category: "concept" as const, Icon: Workflow },
+      { name: "ETL", category: "concept" as const, Icon: Layers },
+      { name: "Real-time Streaming", category: "concept" as const, Icon: Zap },
     ],
   },
   {
-    title: "Frameworks & Tools",
+    title: "Frontend",
     skills: [
-      { name: "Spring", category: "framework" as const },
-      { name: "Hibernate", category: "framework" as const },
-      { name: "Android SDK", category: "framework" as const },
-      { name: "Firebase", category: "cloud" as const },
-      { name: "Git", category: "tool" as const },
-      { name: "Ubuntu/Linux", category: "tool" as const },
+      { name: "React", category: "framework" as const, Icon: SiReact },
+      { name: "Next.js", category: "framework" as const, Icon: SiNextdotjs },
+      { name: "Redux", category: "framework" as const, Icon: SiRedux },
+    ],
+  },
+  {
+    title: "Backend & Frameworks",
+    skills: [
+      { name: "Spring", category: "framework" as const, Icon: SiSpring },
+      { name: "Hibernate", category: "framework" as const, Icon: SiHibernate },
+      { name: "Odoo", category: "framework" as const, Icon: SiOdoo },
+      { name: "Firebase", category: "cloud" as const, Icon: SiFirebase },
+      { name: "Android SDK", category: "framework" as const, Icon: SiAndroid },
     ],
   },
   {
     title: "Databases",
     skills: [
-      { name: "PostgreSQL", category: "database" as const },
-      { name: "MySQL", category: "database" as const },
-      { name: "Oracle", category: "database" as const },
-      { name: "NoSQL", category: "database" as const },
+      { name: "PostgreSQL", category: "database" as const, Icon: SiPostgresql },
+      { name: "MySQL", category: "database" as const, Icon: SiMysql },
+      { name: "Oracle", category: "database" as const, Icon: Database },
+      { name: "MongoDB", category: "database" as const, Icon: SiMongodb },
+    ],
+  },
+  {
+    title: "Tools & DevOps",
+    skills: [
+      { name: "Git", category: "tool" as const, Icon: SiGit },
+      { name: "Docker", category: "tool" as const, Icon: SiDocker },
+      { name: "Linux", category: "tool" as const, Icon: SiLinux },
     ],
   },
   {
     title: "Concepts & Architecture",
     skills: [
-      { name: "Distributed Systems", category: "concept" as const },
-      { name: "Microservices", category: "concept" as const },
-      { name: "Enterprise Architecture", category: "concept" as const },
-      { name: "Performance Optimization", category: "concept" as const },
-      { name: "Open Source", category: "concept" as const },
-      { name: "Agile", category: "concept" as const },
+      { name: "Distributed Systems", category: "concept" as const, Icon: Network },
+      { name: "Microservices", category: "concept" as const, Icon: Container },
+      { name: "Enterprise Architecture", category: "concept" as const, Icon: Box },
+      { name: "Performance Optimization", category: "concept" as const, Icon: BarChart3 },
+      { name: "Open Source", category: "concept" as const, Icon: GitBranch },
+      { name: "Agile", category: "concept" as const, Icon: Cog },
     ],
   },
 ];
@@ -85,7 +126,8 @@ const Skills = () => {
                     <SkillBadge 
                       key={skill.name} 
                       name={skill.name} 
-                      category={skill.category} 
+                      category={skill.category}
+                      Icon={skill.Icon}
                     />
                   ))}
                 </div>

@@ -1,6 +1,10 @@
+import { LucideIcon } from "lucide-react";
+import { IconType } from "@icons-pack/react-simple-icons";
+
 interface SkillBadgeProps {
   name: string;
-  category: "language" | "framework" | "tool" | "database" | "cloud" | "concept";
+  category: "language" | "framework" | "tool" | "database" | "cloud" | "concept" | "ai";
+  Icon?: LucideIcon | IconType;
 }
 
 const categoryStyles = {
@@ -10,13 +14,15 @@ const categoryStyles = {
   database: "bg-orange-500/10 text-orange-600 dark:text-orange-400 border-orange-500/20 hover:border-orange-500/50",
   cloud: "bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border-cyan-500/20 hover:border-cyan-500/50",
   concept: "bg-pink-500/10 text-pink-600 dark:text-pink-400 border-pink-500/20 hover:border-pink-500/50",
+  ai: "bg-violet-500/10 text-violet-600 dark:text-violet-400 border-violet-500/20 hover:border-violet-500/50",
 };
 
-const SkillBadge = ({ name, category }: SkillBadgeProps) => {
+const SkillBadge = ({ name, category, Icon }: SkillBadgeProps) => {
   return (
     <span
-      className={`inline-flex items-center px-4 py-2 rounded-lg text-sm font-medium border transition-all duration-200 hover:scale-105 cursor-default ${categoryStyles[category]}`}
+      className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border transition-all duration-200 hover:scale-105 cursor-default ${categoryStyles[category]}`}
     >
+      {Icon && <Icon className="w-4 h-4" />}
       {name}
     </span>
   );
