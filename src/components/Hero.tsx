@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Terminal, Instagram } from "lucide-react";
+import { Github, Linkedin, Mail, Terminal, Instagram, FileText, BookOpen } from "lucide-react";
 import { SiX } from "@icons-pack/react-simple-icons";
 
 const Hero = () => {
@@ -91,6 +91,24 @@ const Hero = () => {
               aria-label="Instagram"
             >
               <Instagram className="w-5 h-5" />
+            </a>
+            <a 
+              href="https://drive.google.com/file/d/1_ywfPEQlSl5I802zluPVqweuYC6jxND1/view?usp=sharing" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-3 rounded-lg bg-secondary border border-border text-muted-foreground hover:text-foreground hover:border-primary/50 transition-all"
+              aria-label="Resume/CV"
+            >
+              <FileText className="w-5 h-5" />
+            </a>
+            <a 
+              href="http://gettingstartedwithlibreoffice.blogspot.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-3 rounded-lg bg-secondary border border-border text-muted-foreground hover:text-foreground hover:border-primary/50 transition-all"
+              aria-label="GSoC Blog"
+            >
+              <BookOpen className="w-5 h-5" />
             </a>
             <a 
               href="mailto:hello@vikasmahato.com"
