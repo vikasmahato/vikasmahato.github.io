@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail, Terminal } from "lucide-react";
+import { Github, Linkedin, Mail, Terminal, Instagram } from "lucide-react";
+import { SiX } from "@icons-pack/react-simple-icons";
 
 const Hero = () => {
   return (
@@ -21,10 +22,8 @@ const Hero = () => {
             className="text-5xl md:text-7xl font-bold tracking-tight mb-6 animate-slide-up"
             style={{ animationDelay: "0.2s", opacity: 0 }}
           >
-            Building{" "}
-            <span className="text-gradient">scalable</span>
-            <br />
-            data systems
+            Hi, I'm{" "}
+            <span className="text-gradient">Vikas Mahato</span>
           </h1>
 
           <p 
@@ -32,7 +31,7 @@ const Hero = () => {
             style={{ animationDelay: "0.3s", opacity: 0 }}
           >
             Data Engineer at Expedia Group specializing in distributed systems, 
-            real-time streaming, and large-scale data processing with Apache Spark & Kafka.
+            real-time streaming, GenAI solutions, and large-scale data processing with Apache Spark & Kafka.
           </p>
 
           <div 
@@ -58,24 +57,45 @@ const Hero = () => {
             style={{ animationDelay: "0.5s", opacity: 0 }}
           >
             <a 
-              href="https://github.com" 
+              href="https://github.com/vikasmahato" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 rounded-lg bg-secondary border border-border text-muted-foreground hover:text-foreground hover:border-primary/50 transition-all"
+              aria-label="GitHub"
             >
               <Github className="w-5 h-5" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/vikas-mahato/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 rounded-lg bg-secondary border border-border text-muted-foreground hover:text-foreground hover:border-primary/50 transition-all"
+              aria-label="LinkedIn"
             >
               <Linkedin className="w-5 h-5" />
             </a>
             <a 
-              href="mailto:hello@example.com"
+              href="https://x.com/VikasMahato5" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="p-3 rounded-lg bg-secondary border border-border text-muted-foreground hover:text-foreground hover:border-primary/50 transition-all"
+              aria-label="X (Twitter)"
+            >
+              <SiX className="w-5 h-5" />
+            </a>
+            <a 
+              href="https://www.instagram.com/camera.wala.dost/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-3 rounded-lg bg-secondary border border-border text-muted-foreground hover:text-foreground hover:border-primary/50 transition-all"
+              aria-label="Instagram"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
+            <a 
+              href="mailto:hello@vikasmahato.com"
+              className="p-3 rounded-lg bg-secondary border border-border text-muted-foreground hover:text-foreground hover:border-primary/50 transition-all"
+              aria-label="Email"
             >
               <Mail className="w-5 h-5" />
             </a>
