@@ -29,9 +29,7 @@ const Navigation = () => {
               </a>
             ))}
             <a
-              href="https://drive.google.com/file/d/1_ywfPEQlSl5I802zluPVqweuYC6jxND1/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/resume"
               className="px-4 py-2 text-sm font-medium bg-gradient-primary text-primary-foreground rounded-lg hover:shadow-glow transition-all"
             >
               View Resume
@@ -62,9 +60,8 @@ const Navigation = () => {
                 </a>
               ))}
               <a
-                href="https://drive.google.com/file/d/1_ywfPEQlSl5I802zluPVqweuYC6jxND1/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/resume"
+                onClick={() => setIsOpen(false)}
                 className="px-4 py-2 text-sm font-medium bg-gradient-primary text-primary-foreground rounded-lg text-center"
               >
                 View Resume
