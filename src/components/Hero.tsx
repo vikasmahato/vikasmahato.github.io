@@ -1,6 +1,37 @@
 import { Github, Linkedin, Terminal, Instagram, FileText, BookOpen } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { useCallback } from "react";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
+  const waitForElement = useCallback((id: string, timeout = 1200, interval = 50) => {
+    const start = Date.now();
+    return new Promise<HTMLElement | null>((resolve) => {
+      const check = () => {
+        const el = document.getElementById(id);
+        if (el) return resolve(el);
+        if (Date.now() - start >= timeout) return resolve(null);
+        setTimeout(check, interval);
+      };
+      check();
+    });
+  }, []);
+
+  const scrollToSection = useCallback(async (hash: string) => {
+    const id = hash.replace(/^#/, "");
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
+
+    // Navigate to home and wait for the element to appear
+    navigate("/");
+    const nextEl = await waitForElement(id);
+    if (nextEl) nextEl.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [navigate, waitForElement]);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background gradient */}
@@ -37,18 +68,20 @@ const Hero = () => {
             className="flex flex-wrap gap-4 animate-slide-up"
             style={{ animationDelay: "0.4s", opacity: 0 }}
           >
-            <a 
-              href="#experience" 
+            <button
+              type="button"
+              onClick={() => scrollToSection("#experience")}
               className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-primary text-primary-foreground rounded-lg font-medium transition-all hover:shadow-glow hover:scale-105"
             >
               View Experience
-            </a>
-            <a 
-              href="#skills" 
+            </button>
+            <button
+              type="button"
+              onClick={() => scrollToSection("#skills")}
               className="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground rounded-lg font-medium border border-border transition-all hover:bg-muted"
             >
               Skills & Tech Stack
-            </a>
+            </button>
           </div>
 
           <div 
