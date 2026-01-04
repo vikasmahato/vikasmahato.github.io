@@ -2,7 +2,7 @@
   "name": "vikasmahato",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://vikasmahato.github.io/me",
+  "homepage": "http://vikasmahato.github.io",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.10.2",
