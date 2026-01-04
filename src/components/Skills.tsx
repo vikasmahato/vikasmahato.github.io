@@ -10,7 +10,8 @@ import {
   SiSpring, SiHibernate, SiFirebase, SiReact, SiNextdotjs,
   SiRedux, SiTypescript, SiPostgresql, SiMysql,
   SiMongodb, SiOpenai, SiLangchain, SiN8n,
-  SiCplusplus, SiGit, SiLinux, SiAndroid, SiDocker, SiOdoo
+  SiCplusplus, SiGit, SiLinux, SiAndroid, SiDocker, SiOdoo,
+  SiJquery, SiDatadog, SiGrafana, SiApacheairflow
 } from "@icons-pack/react-simple-icons";
 
 const skillCategories = [
@@ -42,6 +43,7 @@ const skillCategories = [
     skills: [
       { name: "Apache Spark", category: "framework" as const, Icon: SiApachespark },
       { name: "Apache Kafka", category: "framework" as const, Icon: SiApachekafka },
+      { name: "Apache Airflow", category: "framework" as const, Icon: SiApacheairflow },
       { name: "Hadoop", category: "framework" as const, Icon: Server },
       { name: "Data Pipelines", category: "concept" as const, Icon: Workflow },
       { name: "ETL", category: "concept" as const, Icon: Layers },
@@ -54,6 +56,7 @@ const skillCategories = [
       { name: "React", category: "framework" as const, Icon: SiReact },
       { name: "Next.js", category: "framework" as const, Icon: SiNextdotjs },
       { name: "Redux", category: "framework" as const, Icon: SiRedux },
+      { name: "jQuery", category: "framework" as const, Icon: SiJquery },
     ],
   },
   {
@@ -81,6 +84,9 @@ const skillCategories = [
       { name: "Git", category: "tool" as const, Icon: SiGit },
       { name: "Docker", category: "tool" as const, Icon: SiDocker },
       { name: "Linux", category: "tool" as const, Icon: SiLinux },
+      { name: "Datadog", category: "tool" as const, Icon: SiDatadog },
+      { name: "Grafana", category: "tool" as const, Icon: SiGrafana },
+      { name: "Querybook", category: "tool" as const, Icon: Database },
     ],
   },
   {

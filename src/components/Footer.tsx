@@ -1,5 +1,4 @@
-import { Code2, Github, Linkedin, Mail, Instagram, FileText, BookOpen } from "lucide-react";
-import { SiX } from "@icons-pack/react-simple-icons";
+import { Code2, Github, Linkedin, Instagram, FileText, BookOpen } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -31,15 +30,6 @@ const Footer = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a 
-              href="https://x.com/VikasMahato5" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="p-2 text-muted-foreground hover:text-foreground transition-colors"
-              aria-label="X (Twitter)"
-            >
-              <SiX className="w-5 h-5" />
-            </a>
-            <a 
               href="https://www.instagram.com/camera.wala.dost/" 
               target="_blank" 
               rel="noopener noreferrer"
@@ -65,13 +55,6 @@ const Footer = () => {
               aria-label="GSoC Blog"
             >
               <BookOpen className="w-5 h-5" />
-            </a>
-            <a 
-              href="mailto:hello@vikasmahato.com"
-              className="p-2 text-muted-foreground hover:text-foreground transition-colors"
-              aria-label="Email"
-            >
-              <Mail className="w-5 h-5" />
             </a>
           </div>
 
