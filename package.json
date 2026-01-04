@@ -4,9 +4,9 @@
   "private": true,
   "homepage": "http://vikasmahato.github.io",
   "dependencies": {
-    "gh-pages": "^2.1.1",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "gh-pages": "^6.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-scripts": "5.0.1"
   },
   "scripts": {

@@ -1,0 +1,61 @@
+.colorlib-github-stats {
+  padding: 100px 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0%, transparent 100%);
+}
+
+.github-stats-container {
+  margin-top: 50px;
+}
+
+.github-stat-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border-radius: 15px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.github-stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(97, 218, 251, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.github-stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-color: rgba(97, 218, 251, 0.3);
+}
+
+.github-stat-card:hover::before {
+  left: 100%;
+}
+
+.github-stat-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.github-stat-card:hover .github-stat-image {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .github-stat-card {
+    padding: 15px;
+  }
+  
+  .colorlib-github-stats {
+    padding: 60px 0;
+  }
+}
+

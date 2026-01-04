@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
+import './components/modern-styles.css';
 import Sidebar from './components/sidebar'
 import Introduction from './components/introduction'
 import About from './components/about'
 import Skills from './components/skills'
+import GitHubStats from './components/github-stats'
 import Timeline from './components/timeline'
 
 class App extends Component {
@@ -16,6 +18,7 @@ class App extends Component {
 					<Introduction></Introduction>
 					<About></About>
                     <Skills></Skills>
+					<GitHubStats></GitHubStats>
 					<Timeline></Timeline>
           	</div>
       	</div>

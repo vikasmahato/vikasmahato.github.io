@@ -1,0 +1,201 @@
+/* Modern Portfolio Enhancements */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced hero section */
+#colorlib-hero .slider-text h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  animation: fadeInDown 1s ease;
+}
+
+#colorlib-hero .slider-text h2 {
+  font-size: 1.8em;
+  font-weight: 300;
+  margin-top: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1.2s ease;
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Enhanced buttons */
+.btn-primary.btn-learn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  padding: 15px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary.btn-learn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+/* Enhanced about section */
+.colorlib-about {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0%, transparent 100%);
+}
+
+.about-desc p {
+  line-height: 1.8;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.about-desc strong {
+  color: #61DAFB;
+  font-weight: 600;
+}
+
+/* Modern card effects */
+.services {
+  transition: all 0.3s ease;
+  border-radius: 15px;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.services:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  border-color: rgba(97, 218, 251, 0.5);
+}
+
+.services .icon {
+  font-size: 3em;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.services:hover .icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Enhanced timeline */
+.timeline-entry {
+  transition: all 0.3s ease;
+}
+
+.timeline-entry:hover {
+  transform: translateX(10px);
+}
+
+.timeline-label {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border-radius: 10px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.timeline-entry:hover .timeline-label {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-color: rgba(97, 218, 251, 0.3);
+}
+
+/* Enhanced sidebar */
+#colorlib-aside {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.9) 100%);
+  box-shadow: 5px 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.author-img {
+  border: 4px solid rgba(97, 218, 251, 0.3);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.author-img:hover {
+  border-color: rgba(97, 218, 251, 0.6);
+  transform: scale(1.05);
+}
+
+#colorlib-main-menu ul li a {
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#colorlib-main-menu ul li a:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  #colorlib-hero .slider-text h1 {
+    font-size: 2.5em;
+  }
+  
+  #colorlib-hero .slider-text h2 {
+    font-size: 1.2em;
+  }
+}
+
+/* Glassmorphism effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Pulse animation for icons */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+

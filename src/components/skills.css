@@ -1,0 +1,104 @@
+.skills-container {
+  margin-top: 50px;
+}
+
+.skill-category {
+  margin-bottom: 50px;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+.skill-category:nth-child(1) { animation-delay: 0.1s; }
+.skill-category:nth-child(2) { animation-delay: 0.2s; }
+.skill-category:nth-child(3) { animation-delay: 0.3s; }
+.skill-category:nth-child(4) { animation-delay: 0.4s; }
+.skill-category:nth-child(5) { animation-delay: 0.5s; }
+.skill-category:nth-child(6) { animation-delay: 0.6s; }
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.skill-category-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.skill-category-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--skill-color, #61DAFB), transparent);
+  border-radius: 2px;
+}
+
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.skill-badge-img {
+  height: 28px;
+  margin: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 4px;
+  filter: brightness(1);
+}
+
+.skill-badge-img:hover {
+  transform: translateY(-3px) scale(1.1);
+  filter: brightness(1.2);
+  box-shadow: 0 5px 15px rgba(97, 218, 251, 0.4);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skill-category {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .skill-category-title {
+    font-size: 20px;
+  }
+
+  .skill-badge-img {
+    height: 24px;
+    margin: 4px;
+  }
+
+  .skill-badges {
+    gap: 8px;
+  }
+}
+

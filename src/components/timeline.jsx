@@ -22,7 +22,8 @@ export default class Timeline extends Component {
                       </div>
                       <div className="timeline-label">
                         <h2>Expedia Group, Gurugram <span>Jan, 2021 – Present</span></h2>
-                        <p>Here I work on Big Data and Data Engineering in the Competitive Intelligence team. A bulk of the programming task is done in Scala, however some components use java, python, angular and react as well. We make heavy use of Kafka. </p>
+                        <p>Working on Big Data and Data Engineering in the Competitive Intelligence team. I specialize in building scalable data pipelines and distributed systems using <strong>Apache Spark</strong> and <strong>Scala</strong> for processing large-scale datasets. My work involves designing and implementing robust data engineering solutions with <strong>Apache Kafka</strong> for real-time data streaming, optimizing Spark jobs for performance, and working with various Big Data technologies to deliver insights at scale.</p>
+                        <p>Key technologies: Scala, Apache Spark, Apache Kafka, Big Data, Distributed Systems, Data Engineering</p>
                       </div>
                     </div>
                   </article>
@@ -34,7 +35,7 @@ export default class Timeline extends Component {
                       </div>
                       <div className="timeline-label">
                         <h2>Nucleus Software Exports Ltd., Noida <span>Jul, 2018 – Jan, 2021</span></h2>
-                        <p>Here I work on Spring-Hibernate. I have worked on improving performance issues in the application. I also hold experience in working with certain routines that are considered complex in their behaviour but for an essential part of the application.</p>
+                        <p>Worked on enterprise applications using Spring and Hibernate frameworks. Focused on improving application performance, optimizing database queries, and working with complex business logic routines that were essential to the application's core functionality. Gained valuable experience in Java enterprise development and software architecture.</p>
                       </div>
                     </div>
                   </article>

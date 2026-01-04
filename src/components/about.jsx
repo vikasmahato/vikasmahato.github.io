@@ -11,9 +11,11 @@ export default class About extends Component {
                 <div className="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
                 <div className="col-md-12">
                     <div className="about-desc">
-                    <span className="heading-meta">About Us</span>
+                    <span className="heading-meta">About Me</span>
                     <h2 className="colorlib-heading">Who Am I?</h2>
-                    <p>I am a grad student from Delhi Technological University (Formerly DCE).I love exploring new technologies and often amazed by the progress we as a human species have mad so far in the recent years (apart from the headphone-jack part!!)</p>
+                    <p>I'm a <strong>Mechanical Engineer turned Software Engineer</strong> with a passion for building scalable solutions and contributing to open source. Currently working at Expedia Group on Big Data and Data Engineering, I specialize in building distributed systems using <strong>Apache Spark</strong>, <strong>Scala</strong>, and <strong>Apache Kafka</strong> for processing large-scale datasets and real-time data streaming.</p>
+                    <p>My journey from mechanical engineering to software development has given me a unique perspective on problem-solving. I love exploring new technologies and am constantly amazed by the progress we've made as a species (though I still miss the headphone jack!).</p>
+                    <p>When I'm not coding, you'll find me contributing to open source projects, writing technical blogs, or capturing moments through my camera lens.</p>
                     </div>
                 </div>
                 </div>
@@ -33,55 +35,55 @@ export default class About extends Component {
             <div className="col-md-4 text-center animate-box">
                 <div className="services color-1">
                 <span className="icon">
-                    <i className="icon-bulb" />
+                    <i className="icon-data" />
                 </span>
                 <div className="desc">
-                    <h3>Coding</h3>
-                    <p>Trying to improve my rank on Online Judges like HackerRank and HackerEarth.</p>
+                    <h3>Big Data Engineering</h3>
+                    <p>Building scalable data pipelines and distributed systems using Apache Spark, Scala, and Kafka for processing large-scale datasets.</p>
                 </div>
                 </div>
             </div>
             <div className="col-md-4 text-center animate-box">
                 <div className="services color-3">
                 <span className="icon">
-                    <i className="icon-data" />
+                    <i className="icon-code" />
                 </span>
                 <div className="desc">
-                    <h3>Data Structures & Algorithms</h3>
-                    <p>I have good grasp over fundamental concepts of DSA</p>
+                    <h3>Scala & Spark</h3>
+                    <p>Extensive experience in developing high-performance applications using Scala and Apache Spark for data processing and analytics.</p>
                 </div>
                 </div>
             </div>
             <div className="col-md-4 text-center animate-box">
                 <div className="services color-5">
                 <span className="icon">
-                    <i className="icon-code" />
+                    <i className="icon-layers2" />
                 </span>
                 <div className="desc">
-                    <h3>Web Application</h3>
-                    <p>I hav developed web applications for Delhi Police's SE branch and Youngman India.</p>
+                    <h3>Data Engineering</h3>
+                    <p>Designing and implementing robust data engineering solutions with Kafka, Spark, and distributed computing frameworks.</p>
                 </div>
                 </div>
             </div>
             <div className="col-md-4 text-center animate-box">
                 <div className="services color-2">
                 <span className="icon">
-                    <i className="icon-phone3" />
+                    <i className="icon-bulb" />
                 </span>
                 <div className="desc">
-                    <h3>Android</h3>
-                    <p>Over two years experience with android development and have built Safety First which was my app based startup.</p>
+                    <h3>Web Development</h3>
+                    <p>Experience building web applications using Spring, Laravel, React, and modern JavaScript frameworks.</p>
                 </div>
                 </div>
             </div>
             <div className="col-md-4 text-center animate-box">
                 <div className="services color-4">
                 <span className="icon">
-                    <i className="icon-layers2" />
+                    <i className="icon-phone3" />
                 </span>
                 <div className="desc">
-                    <h3>Robotics</h3>
-                    <p>I have worked with Arduino and Raspberry PI and have built mechanical arms and smart wheelchairs for my projects.</p>
+                    <h3>Open Source</h3>
+                    <p>Active contributor to open source projects including LibreOffice. Google Summer of Code alumni with a passion for giving back to the community.</p>
                 </div>
                 </div>
             </div>

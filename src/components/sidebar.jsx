@@ -5,7 +5,7 @@ export default class Sidebar extends Component {
     return (
       <div>
         <div>
-          <nav href="#navbar" className="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i /></nav>
+          <button type="button" className="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation"><i /></button>
           <aside id="colorlib-aside" className="border js-fullheight">
             <div className="text-center">
               <div className="author-img" style={{backgroundImage: 'url(images/about.jpg)'}} />
@@ -18,17 +18,17 @@ export default class Sidebar extends Component {
                   <li className="active"><a href="#home" data-nav-section="home">Introduction</a></li>
                   <li><a href="#about" data-nav-section="about">About</a></li>
                   <li><a href="#skills" data-nav-section="skills">Skills</a></li>
-                  <li><a href="#education" data-nav-section="education">Education</a></li>
+                  <li><a href="#github" data-nav-section="github">GitHub</a></li>
                   <li><a href="#timeline" data-nav-section="timeline">Timeline</a></li>
                 </ul>
               </div>
             </nav>
             <nav id="colorlib-main-menu">
               <ul>
-                <li><a href="https://twitter.com/VikasMahato5" target="_blank" rel="noopener noreferrer"><i className="icon-twitter2" /></a></li>
-                <li><a href="https://www.instagram.com/camera.wala.dost/" target="_blank" rel="noopener noreferrer"><i className="icon-instagram" /></a></li>
-                <li><a href="https://www.linkedin.com/in/vikas-mahato/" target="_blank" rel="noopener noreferrer"><i className="icon-linkedin2" /></a></li>
-                <li><a href="https://github.com/vikasmahato" target="_blank" rel="noopener noreferrer"><i className="icon-github"></i></a></li>
+                <li><a href="https://www.instagram.com/camera.wala.dost/" target="_blank" rel="noopener noreferrer" title="Instagram"><i className="icon-instagram" /></a></li>
+                <li><a href="https://www.linkedin.com/in/vikas-mahato/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i className="icon-linkedin2" /></a></li>
+                <li><a href="https://x.com/VikasMahato5" target="_blank" rel="noopener noreferrer" title="X (Twitter)"><i className="icon-twitter2" /></a></li>
+                <li><a href="https://github.com/vikasmahato" target="_blank" rel="noopener noreferrer" title="GitHub"><i className="icon-github"></i></a></li>
               </ul>
             </nav>
             <div className="colorlib-footer">
